@@ -26,7 +26,7 @@ module_name = "PyChessBot"
 # Load the module
 spec = importlib.util.spec_from_file_location(module_name, so_file_path)
 PyChessBot = importlib.util.module_from_spec(spec)
-sys.modules[module_name] = module
+sys.modules[module_name] = PyChessBot
 spec.loader.exec_module(module)
 
 print(PyChessBot)
