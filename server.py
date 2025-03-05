@@ -3,6 +3,19 @@ from fastapi import FastAPI, Request
 from fastapi.responses import PlainTextResponse
 from fastapi.staticfiles import StaticFiles
 
+
+import subprocess
+
+try:
+    # Run 'ldd --version' command to get glibc version
+    result = subprocess.run(['ldd', '--version'], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+    glibc_version = result.stdout.decode('utf-8').splitlines()[0]
+    print(f"glibc version: {glibc_version}")
+except Exception as e:
+    print(f"Error occurred: {e}")
+
+exit()
+
 import importlib.util
 import sys
 
