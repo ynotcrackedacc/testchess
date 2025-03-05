@@ -32,7 +32,7 @@ async function onDrop(source, target) {
 
 async function getBotMove()
 {
-  const response = await fetch(`http://0.0.0.0:8000/getMove?fen=${game.fen()}`);
+  const response = await fetch(`https://testchess.onrender.com/getMove?fen=${game.fen()}`);
   return await response.text();
 }
 
