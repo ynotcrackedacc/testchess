@@ -2,7 +2,7 @@ import uvicorn
 from fastapi import FastAPI, Request
 from fastapi.responses import PlainTextResponse
 from fastapi.staticfiles import StaticFiles
-import PyChessBot
+# import PyChessBot
 import os
 
 print(os.getcwd())
