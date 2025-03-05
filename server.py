@@ -20,7 +20,7 @@ import importlib.util
 import sys
 
 # Specify the path to the .so file (extension module)
-so_file_path = "PyChessBot.cpython-312-x86_64-linux-gnu.so"
+so_file_path = "PyChessBot.cpython-310-x86_64-linux-gnu.so"
 module_name = "PyChessBot"
 
 # Load the module
