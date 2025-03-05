@@ -14,7 +14,7 @@ try:
 except Exception as e:
     print(f"Error occurred: {e}")
 
-exit()
+# exit()
 
 import importlib.util
 import sys
