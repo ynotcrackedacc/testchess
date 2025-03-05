@@ -2,11 +2,14 @@ import uvicorn
 from fastapi import FastAPI, Request
 from fastapi.responses import PlainTextResponse
 from fastapi.staticfiles import StaticFiles
-# import PyChessBot
 import os
+import sys
 
+sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 print(os.getcwd())
 print(os.listdir())
+
+import PyChessBot
 
 app = FastAPI()
 app.mount('/static', StaticFiles(directory='static', html=True), name='static')
