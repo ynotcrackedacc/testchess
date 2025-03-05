@@ -7,7 +7,7 @@ import importlib.util
 import sys
 
 # Specify the path to the .so file (extension module)
-so_file_path = "PyChessBot.cp310-win_amd64.pyd"
+so_file_path = "PyChessBot.cp310-win_amd64.so"
 module_name = "PyChessBot"
 
 # Load the module
