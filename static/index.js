@@ -28,6 +28,8 @@ async function onDrop(source, target) {
 
   const m = await getBotMove();
   game.move(m, {sloppy: true});
+  board.position(game.fen());
+  updateStatus();
 }
 
 async function getBotMove()
