@@ -40,6 +40,6 @@ app.mount('/static', StaticFiles(directory='static', html=True), name='static')
 async def getMove(fen: str):
     bot = PyChessBot.ChessBot()
     bot.setFen(fen)
-    return bot.findMove(5)
+    return bot.findMove(6)
 
 uvicorn.run(app, host='0.0.0.0', port=8000)
